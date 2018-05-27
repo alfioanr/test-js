@@ -1,0 +1,4 @@
+en el proceso de realizar este test me he dado cuenta de que hay un error con
+algún modulo o dependencia de node que no permite iniciar la aplicación
+he intentado resolverla, pero la información que regresa la consola al ejecutar
+la aplicación es insuficiente para localizar el error
