@@ -1,0 +1,18 @@
+// imprime 5 veces 5 porque se llama el setTimeout 5 veces dentro del ciclo for
+//y antes de que se cumpla el tiempo del primer setTimeout ya el valor de i es igual a 5
+
+// declaro una variable i = -1 para que cuando empiece el conteo directamente
+//empiece en 0, creo la funcion timer y utilizando un ciclo while que se llamara
+// recursivamente hasta que cumple la condicion del bucle. y finalmente invoco la funcion timer()
+
+
+
+// contador del 0-4 con setTimeout
+var i = -1 ;
+      timer = function() {
+        i ++;
+        while (i>4) {}
+        console.log(i);
+        setTimeout(timer,1000);
+      }
+timer()
