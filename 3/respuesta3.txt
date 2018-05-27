@@ -1,0 +1,33 @@
+var resolve=function(successMessage){
+ console.log("Yes! " + successMessage);
+};
+ var reject=function(failMessage){
+  console.log("No! " + failMessage);
+};
+
+choose=function(){
+      if(Math.round(Math.random())===1){
+         resolve('Success!');
+      }
+      else{
+
+        reject('Fail!');
+      }
+    };
+
+var asincronia=function(resolve,reject){
+
+    setTimeout(choose,1000);
+  }
+  // console.log("parece que funciona")
+
+
+asincronia();
+/*
+el problema de compatibilidad lo resolveria de la siguiente manera
+1) crearia dos funciones con los resultados esperados
+2) una tercera funcion que recibira como parametro una de las dos funciones previamente creadas
+3) plantearia un condicional, en caso de que se cumpla alguna de las
+condiciones llamar una u otra funcion
+4)crear una cuarta funcion que llame a la funcion que decide de a=manera asincrona, cual mensaje se ejecutara
+*/
