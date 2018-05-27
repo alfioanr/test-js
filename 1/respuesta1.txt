@@ -1,0 +1,42 @@
+/*test 1
+respuesta 1
+rgb = { red: '#FF0000',
+        green: '#00FF00',
+        blue: '#0000FF',
+        white: '#FFFFFF',  // black: '#000000' }
+wb = {white: '#FFFFFF', black: '#000000' }
+colors === rgb*/
+
+// respuesta 2:
+// itero sobre wb y rgb asignandole a colors las propiedades y el valor de las propiedades sin modificar ninguno de los dos objetos.
+var rgb = {
+    red: "#FF0000",
+    green: "#00FF00",
+    blue: "#0000FF"
+};
+
+var wb = {
+    white: "#FFFFFF",
+    black: "#000000"
+};
+var colors = {}
+
+
+/*for (a in wb ){
+  colors[a] = wb[a]
+}
+for (a in rgb ){
+  colors[a] = rgb[a]
+}
+console.log(colors)*/
+
+
+/* respuesta 3:
+no existe soporte para metodo Object.assign() en internet explorer, por lo que una solucion seria iterar sobre el objeto wb y asignarle a rgb los valores de wb
+*/
+
+
+for (a in wb ){
+  rgb[a] = wb[a]
+}
+console.log((rgb))
