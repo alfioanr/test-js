@@ -16,3 +16,18 @@ var i = -1 ;
         setTimeout(timer,1000);
       }
 timer()
+
+//Segunda respuesta utilizando un setTimeout() y clearTimeout.
+
+var i = 0;
+var t;
+
+function CountingTo4() {
+    console.log(i)
+     i++;
+    t = setTimeout(CountingTo4, 1000);
+    if(i>4){
+      clearTimeout(t);
+    }
+}
+CountingTo4()
