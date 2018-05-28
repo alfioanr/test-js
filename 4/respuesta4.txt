@@ -4,6 +4,7 @@ he intentado resolverla, pero la información que regresa la consola al ejecutar
 la aplicación es insuficiente para localizar el error
 
 
-creando un archivo con nombre respuesta.js el cual contiene el código que tiene como resultado el comportamiento esperado;. Sin embargo al no coincidir lo propuesto en el README con lo expuesto en el json, la respuesta no es exactamente igual.
+creando un archivo con nombre respuesta.js el cual contiene el código que tiene como resultado el comportamiento esperado;.
+Sin embargo al no coincidir lo propuesto en el README con lo expuesto en el json, la respuesta no es exactamente igual.
 
 para ejecutar ejecutar comando node respuesta.js
