@@ -38,7 +38,7 @@ function Eventos(data) {
 function newTimer() {
     eventos.forEach((e,index,eventos) => {
         if(e.second == i){
-            console.log(e)
+            console.log(`At second ${e.second}: {type: "${e.type}", message: "${e.message}"}`)
             eventos.splice(index,1);
         }
     });
